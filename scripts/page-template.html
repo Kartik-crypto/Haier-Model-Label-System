@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Haier | Heater Labels</title>
+  <meta
+    name="description"
+    content="Select your washing machine model to view its heater working label."
+  >
+
+  <link
+    rel="icon"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23005baa'/%3E%3Cpath d='M9 7v18M23 7v18M9 16h14' stroke='white' stroke-width='4'/%3E%3C/svg%3E"
+  >
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #f3f6fa;
+      color: #15283b;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.5;
+    }
+
+    header {
+      background: #005baa;
+      color: white;
+      padding: 22px max(20px, calc((100% - 1000px) / 2));
+      border-bottom: 5px solid #008bd2;
+    }
+
+    .brand {
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -1px;
+    }
+
+    main {
+      max-width: 1040px;
+      margin: auto;
+      padding: 28px 20px 48px;
+    }
+
+    h1 {
+      font-size: 28px;
+      margin: 0 0 6px;
+      line-height: 1.2;
+    }
+
+    .intro {
+      margin: 0 0 25px;
+      color: #536578;
+    }
+
+    section {
+      margin: 0 0 26px;
+      background: white;
+      border: 1px solid #d7e1eb;
+      border-radius: 12px;
+      overflow: hidden;
+    }
+
+    .group {
+      background: #eaf1f9;
+      padding: 16px 20px;
+      border-bottom: 1px solid #d7e1eb;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+
+    .group p {
+      margin: 0;
+      font-size: 14px;
+      color: #42586c;
+    }
+
+    .models {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    .models a {
+      padding: 18px 20px;
+      color: #153d64;
+      text-decoration: none;
+      border-bottom: 1px solid #e7edf3;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      min-height: 68px;
+      font-weight: 700;
+      overflow-wrap: anywhere;
+    }
+
+    .models a:nth-child(odd) {
+      border-right: 1px solid #e7edf3;
+    }
+
+    .models a:hover {
+      background: #f0f7ff;
+    }
+
+    .models a:focus-visible {
+      outline: 3px solid #0074ce;
+      outline-offset: -3px;
+    }
+
+    .open {
+      color: #005baa;
+      font-size: 14px;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+
+    @media (max-width: 700px) {
+      .models {
+        grid-template-columns: 1fr;
+      }
+
+      .models a:nth-child(odd) {
+        border-right: 0;
+      }
+
+      .models a {
+        padding: 17px 16px;
+      }
+
+      .group {
+        padding: 15px 16px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      main {
+        padding: 24px 14px;
+      }
+
+      .open {
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="brand">Haier</div>
+  </header>
+
+  <main>
+    <h1>Heater working labels</h1>
+    <p class="intro">Select your model to open the sticker photo.</p>
+
+    {{MODEL_SECTIONS}}
+  </main>
+</body>
+</html>
